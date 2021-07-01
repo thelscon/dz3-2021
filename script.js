@@ -16,7 +16,16 @@ buttonStart.onclick = function () {
     
 }
 
-const evenNumber = ( value ) => ( value % 2 === 0 ) ? `Введённое число ${value} - чётное число.` : `Введённое число ${value} - нечётное число.` ;
+const evenNumber = function ( value ) {
+
+    if( value % 2 === 0 ) {
+        return `Введённое число ${value} - чётное число.` ;
+    }
+    else {
+        return `Введённое число ${value} - нечётное число.` ;
+    }
+    
+}
 
 const simpleNumber = function ( value ) {
     
