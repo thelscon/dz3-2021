@@ -3,14 +3,10 @@
 const buttoniPiE = document.getElementById( 'iPiE' ) ;
 
 buttoniPiE.onclick = function () {
-    mainFunction ( evenNumber, simpleNumber, enterNumber ) ;
-}
-
-const mainFunction = function ( functionEvenNumber, functionSimpleNumber, enterNumber ) {
 
     const value = enterNumber () ;
-    alert ( `${ functionEvenNumber ( value ) }\n${functionSimpleNumber ( value )}` ) ;
-
+    alert ( `${ evenNumber ( value ) }\n${simpleNumber ( value )}` ) ;
+    
 }
 
 const enterNumber = function () {   
