@@ -1,8 +1,8 @@
 'use strict' ;
 
-const buttoniPiE = document.getElementById( 'iPiE' ) ;
+const buttonStart = document.getElementById( 'iPiE' ) ;
 
-buttoniPiE.onclick = function () {
+buttonStart.onclick = function () {
 
     let aNumber ;
     let textValue = 'Введите число:' ;
