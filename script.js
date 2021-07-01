@@ -1,6 +1,6 @@
 'use strict' ;
 
-const buttonStart = document.getElementById( 'Start' ) ;
+const buttonStart = document.getElementById( 'buttonStart' ) ;
 
 buttonStart.onclick = function () {
 
