@@ -1,6 +1,6 @@
 'use strict' ;
 
-const buttonStart = document.getElementById( 'iPiE' ) ;
+const buttonStart = document.getElementById( 'Start' ) ;
 
 buttonStart.onclick = function () {
 
