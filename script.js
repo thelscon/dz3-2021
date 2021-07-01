@@ -4,13 +4,6 @@ const buttoniPiE = document.getElementById( 'iPiE' ) ;
 
 buttoniPiE.onclick = function () {
 
-    const value = enterNumber () ;
-    alert ( `${ evenNumber ( value ) }\n${simpleNumber ( value )}` ) ;
-    
-}
-
-const enterNumber = function () {   
-     
     let aNumber ;
     let textValue = 'Введите число:' ;
     
@@ -19,8 +12,8 @@ const enterNumber = function () {
         textValue = 'Введённое значение не возможно преобразовать в число. Повторите попытку:' ;
     } while ( isNaN ( parseInt ( aNumber ) ) ) ;
 
-    return parseInt ( aNumber ) ;
-
+    alert ( `${ evenNumber ( aNumber ) }\n${simpleNumber ( aNumber )}` ) ;
+    
 }
 
 const evenNumber = function ( value ) {
