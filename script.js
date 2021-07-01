@@ -11,6 +11,7 @@ buttonStart.onclick = function () {
         aNumber = prompt ( textValue ) ;
         textValue = 'Введённое значение не возможно преобразовать в число. Повторите попытку:' ;
     } while ( isNaN ( parseInt ( aNumber ) ) ) ;
+    aNumber = parseInt ( aNumber ) ;
 
     alert ( `${ evenNumber ( aNumber ) }\n${simpleNumber ( aNumber )}` ) ;
     
