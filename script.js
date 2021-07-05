@@ -13,17 +13,29 @@ buttonStart.onclick = function () {
     } while ( isNaN ( parseInt ( aNumber ) ) ) ;
     aNumber = parseInt ( aNumber ) ;
 
-    alert ( `${ evenNumber ( aNumber ) }\n${simpleNumber ( aNumber )}` ) ;
+    if ( evenNumber ( aNumber ) ) {
+        console.log ( `Число ${aNumber} - чётное число.` ) ;
+    }
+    else {
+        console.log ( `Число ${aNumber} - нечётное число.` ) ;
+    }
+
+    if ( simpleNumber ( aNumber ) ) {
+        console.log ( `Число ${aNumber} - простое число.` ) ;
+    }
+    else {
+        console.log ( `Число ${aNumber} - не простое число.` ) ;
+    }
     
 }
 
 const evenNumber = function ( value ) {
 
     if( value % 2 === 0 ) {
-        return `Введённое число ${value} - чётное число.` ;
+        return true ;
     }
     else {
-        return `Введённое число ${value} - нечётное число.` ;
+        return false ;
     }
     
 }
@@ -31,15 +43,15 @@ const evenNumber = function ( value ) {
 const simpleNumber = function ( value ) {
     
     if( value < 2 ) {
-        return `Введённое значение ${value} не является простым числом, т.к. меньше 2.`
+        return false ;
     }
     else {
         for ( let key = 2; key < value; ++key ) {
             if( value % key === 0 ) {
-                return `Число ${value} - не простое число, т.к. ${value} / ${key} = ${value / key}.` ;
+                return false ;
             }
         }    
-        return `Число ${value} - простое число.` ;
+        return true ;
     }    
     
 }
